@@ -1,0 +1,258 @@
+@import "../../scss/variable";
+.header{
+    width:100%;
+    height:0.4rem;
+    line-height:0.4rem;
+    color: $color-text-l;
+    .content{
+       display: -webkit-box;
+       display: -webkit-flex;
+       display: -moz-box;
+       display: -ms-flexbox;
+       display: flex;
+       -webkit-box-pack: justify;
+       -webkit-justify-content: space-between;
+       -moz-box-pack: justify;
+       -ms-flex-pack: justify;
+       justify-content: space-between;
+       -webkit-box-align: center;
+       -webkit-align-items: center;
+       -moz-box-align: center;
+       -ms-flex-align: center;
+       align-items: center;
+       padding: 0.1rem;
+       line-height: 0.2rem;
+       background-color: #000;
+       position: relative;
+       height: 0.4rem;
+       top: 0;
+       left: 0;
+       right: 0;
+       a{
+         .logo{
+           width: 1.09rem;
+           height: 0.2rem;
+           margin: 0;
+           background-image: url(../../image/missevan.png);
+           display: inline-block;
+           background-position: 50%;
+           background-repeat: no-repeat;
+           -moz-background-size: 100%;
+           background-size: 100%;
+         }
+       }
+       .actions{
+           width: 100%;
+           display: -webkit-box;
+           display: -webkit-flex;
+           display: -moz-box;
+           display: -ms-flexbox;
+           display: flex;
+           -webkit-box-pack: end;
+           -webkit-justify-content: flex-end;
+           -moz-box-pack: end;
+           -ms-flex-pack: end;
+           justify-content: flex-end;
+           -webkit-box-align: center;
+           -webkit-align-items: center;
+           -moz-box-align: center;
+           -ms-flex-align: center;
+           align-items: center;
+            .btn_text {
+               color: #fff;
+               margin: 0 15px;
+               -webkit-box-flex: 0;
+               -webkit-flex: 0 1 auto;
+               -moz-box-flex: 0;
+               -ms-flex: 0 1 auto;
+               flex: 0 1 auto;
+               display: none;
+            }
+            a i.search{
+               width: 0.22rem;
+               height: 0.2rem;
+               background-image: url(../../image/sprite-icons@2x.png);
+               -moz-background-size: 151px 129px;
+               background-size: 151px 129px;
+               background-position: -93px -20px;
+               display: inline-block;
+               background-repeat: no-repeat;
+               -moz-background-size: 100%;
+            }
+            i.menu {
+               margin: 0;
+               background-position: -93px -42px;
+               -webkit-box-flex: 0;
+               -webkit-flex: 0 1 auto;
+               -moz-box-flex: 0;
+               -ms-flex: 0 1 auto;
+               flex: 0 1 auto;
+               width: 0.22rem;
+               height: 0.2rem;
+               background-image: url(../../image/sprite-icons@2x.png);
+               -moz-background-size: 151px 129px;
+               background-size: 151px 129px;
+               display: inline-block;
+               background-repeat: no-repeat;
+           }
+       }
+       
+    }
+    a{
+        height:0.2rem;
+    }
+    i{
+        margin: 0 0.2rem;
+    }
+    .search_input {
+       -webkit-box-flex: 1;
+       -webkit-flex: 1 1 auto;
+       -moz-box-flex: 1;
+       -ms-flex: 1 1 auto;
+       flex: 1 1 auto;
+       display: none;
+       span{
+           display: block;
+           position: absolute;
+           top: 0.15rem;
+           left: 0.15rem;
+           width: 0.14rem;
+           height: 0.14rem;
+           background-image: url(../../image/sprite-icons@2x.png);
+           background-position: -1.22rem -0.83rem;
+           -moz-background-size: 1.51rem 1.29rem;
+           background-size: 1.51rem 1.29rem;
+           opacity: .3;
+       }
+       input{
+           padding-left: 30px;
+           margin: 0;
+           width: 100%;
+           white-space: nowrap;
+           -o-text-overflow: ellipsis;
+           text-overflow: ellipsis;
+           overflow: hidden;
+           height: 0.3rem;
+           background-color: #fff;
+           color: #000;
+           border: none;
+           -webkit-border-radius: 2px;
+           -moz-border-radius: 2px;
+           padding: 0;
+           border-radius: 2px;
+           text-indent: 0.3rem;
+       }
+    }
+    #UserBar{
+       position: fixed;
+       z-index: 100;
+       width: 100%;
+       height: calc(100% - 0.4rem);
+       top: 0.4rem;
+       background-color: #000;
+        .row{
+            color:#fff;
+            display: block;
+            position: relative;
+            height: 0.38rem;
+            width: 100%;
+            background-color: #3d3d3d;
+            margin-bottom: 1px;
+            box-sizing:border-box;
+           &:after{
+                   content: "";
+                   display: block;
+                   position: absolute;
+                   top: -webkit-calc((100% - 0.14rem)/2);
+                   top: -moz-calc((100% - 0.14rem)/2);
+                   top: calc((100% - 0.14rem) / 2);
+                   right: 0.1rem;
+                   height: 0.14rem;
+                   width: 0.08rem;
+                   background-image: url(../../image/sprite-icons@2x.png);
+                   background-position: 0 -1.15rem;
+                   -moz-background-size: 1.15rem 1.29rem;
+                   background-size: 1.15rem 1.29rem;
+           }
+           &.center:after {
+               display: none;
+           }
+           &.center{
+               text-align: center;
+               line-height: 38px;
+               margin-top: 30px;
+           }
+           &.last{
+               text-align: center;
+               line-height: 38px;
+               margin-top: 0px;
+           }
+           &.user {
+               height: 1.1rem;
+               padding: 0.2rem 0.3rem;
+               margin-bottom:0.2rem;
+               box-sizing: border-box;
+               .avatar {
+                   position: relative;
+                   float: left;
+                   width: 0.7rem;
+                   height:  0.7rem;
+                   -webkit-border-radius: 50%;
+                   -moz-border-radius: 50%;
+                   border-radius: 50%;
+                   background-position: 50%;
+                   background-repeat: no-repeat;
+                   -moz-background-size: cover;
+                   background-size: cover;
+                  &:after {
+                       display: block;
+                       position: absolute;
+                       height: 0.25rem;
+                       width: 0.25rem;
+                       bottom: 0;
+                       right: 0;
+                   }
+               }
+               .details {
+                       float: left;
+                       height: 100%;
+                       width: -webkit-calc(100% - 1.5rem);
+                       width: -moz-calc(100% - 1.5rem);
+                       width: calc(100% - 1.5rem);
+                       padding: 10px 20px;
+                       display: -webkit-box;
+                       display: -webkit-flex;
+                       display: -moz-box;
+                       display: -ms-flexbox;
+                       display: flex;
+                       -webkit-box-orient: vertical;
+                       -webkit-box-direction: normal;
+                       -webkit-flex-direction: column;
+                       -moz-box-orient: vertical;
+                       -moz-box-direction: normal;
+                       -ms-flex-direction: column;
+                       flex-direction: column;
+                       -webkit-box-pack: center;
+                       -webkit-justify-content: center;
+                       -moz-box-pack: center;
+                       -ms-flex-pack: center;
+                       justify-content: center;
+                       box-sizing: border-box;
+                   .username {
+                       font-size: 0.16rem;
+                   }
+                   .info {
+                       font-size: 0.14rem;
+                   }
+               }
+           }
+        }
+        .active .row.user .details {
+           -webkit-box-pack: justify;
+           -webkit-justify-content: space-between;
+           -moz-box-pack: justify;
+           -ms-flex-pack: justify;
+           justify-content: space-between;
+       }
+    }
+}

@@ -1,0 +1,17 @@
+export  const CHANGE_INPUT_VALUE = "change_input_value";
+export  const INIT_AJAX_DATA = "init_ajax_data";
+export  const INIT_BANNER_DATA = 'init_banner_data';
+export  const INIT_RECOMMEND_DATA = 'init_recommend_data';
+export  const INIT_MUSIC_DATA = 'init_music_data';
+export  const INIT_ISSHOW = 'init_isshow';
+export  const CANCLE_ISSHOW = 'cancle_isshow';
+export const CHOOSE_ITEM_INIT = 'title_init';
+export const INNER_TIPS = 'title_tips';
+export const ICON_CATALOGS = 'icon_catalogs';
+export const ALBUM_DETAIL = 'album_detail';
+export const SOUND_DETAIL = 'sound_detail';
+export const CURRENT_TIME = 'current_time';
+export const PAUSE_START = 'pause_start';
+export const PERCENT_UM = 'percent_um';
+export const INIT_RANK_DATA = 'init_rank_data';
+export const CHANNELS_LIST = 'init_channels_data';
